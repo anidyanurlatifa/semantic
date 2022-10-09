@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HTML 5 Layout</title>
+    </head>
+    <body>
+
+        <details>
+        <summary>This is mny Header</summary>
+    
+<p>Belajar HTML 5</p>
+</details>
+        <header>
+            <hi>this is mny Header</hi>
+        </header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Education</li>
+                <li>Biodata</li>
+                <li>Hobbies</li>
+            </ul>
+        </nav>
+        <section>
+            <aside>
+                <p>
+                    this is side abr
+                </p>
+            </aside>
+            <article>
+                <h2>
+                    This is article area insde a Section
+                </h2>
+            </article>
+            <article>
+                This is second articel insde the same section
+            </article>
+        </section>
+        <section>
+            <h3>This is second Sectiopn</h3>
+            <p>
+                this is another paragraph in second section
+            </p>
+        </section>
+        
+    </body>
+    <body onload=" UptadeClock()">
+        <div class="datatime">
+            <div class="time"></div>
+            <div class="data"></div> 
+            <span id="dayname">Day</span>,
+            <span id="month">Month</span>
+            <span id="daynum">00</span>,
+            <span id="year">Year</span>
+
+        </div>
+        <div class="time">
+            <span id="hour">00</span>:
+            <span id="minutes">00</span>s
+            <span id="seconds">00</span>:
+            <span id="period">AM</span>
+
+        </div>
+        <script type="text/javascript">
+            function UptadeClock(){
+                var now =new Date();
+                var dname = now.getDay(),
+                mo = now.getMonth(),
+                dunm = now.getDate(),
+                yr = now.getFullYear(),
+                hou =now.getHours(),
+                min = now.getMinutes(),
+                sec = now.getSeconds(),
+                pe = "AM";
+                 
+                if(hor ===0 ){
+                    hou =12;
+                
+                }
+                if(hou >12){
+                    hou = hou =12;
+                    pe = "PM";
+                }
+                Number.prototype.pad =function(digits){
+                    for(varn-this-toString();n.length<digits; n=0+n);
+                    return n;
+                }
+
+
+                var months = ["January","February ","March ","April","May ","June","July","September","October","November","Desember"];
+                var week = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Firday"];
+                var ids =["dayname","month","daynum","year","hour","minutes","seconds","period"];
+                var values = [week[dname],months[mo],yr,dnum.pad(2),hou.pad(2),min.pad(2),sec.pad(2),pe];
+                for(var i = 0;i<ids.length; i++)
+                document.getElementById(ids[i]).firstChild.nodeValue = values[i];
+               
+
+            }
+            function intClock(){
+                 UptadeClock();
+                 window.setInterval(" UptadeClock()", 1);
+                 
+
+
+            }
+            </script>
+
+
+    </body>
+    <body>
+        <!-- <audio src="source src="horse.mp3" controls></aodio> -->
+            <figure>
+                <figcaption>
+                    "Dengarkan suara kuda"
+                
+                </figcaption>
+                <audio controls loop muted>
+                    <source src= "horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+                </audio>
+                Browser tidak mendukung  tag <code>Audio</code>
+            </figure>
+       
+    </body>
+    <body>
+        <img src="gif.video.mp4"
+    </body>
+    <body>
+        <figure><figcaption>
+            Kartun Kelinci
+        </figcaption>
+        <video controls width="400" loop autoplay muted>
+            <video width="320" height="240" controls>
+                <source src="mov_bbb.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+            </video>
+            Browser tidak mendukung tag <code>Video</code>
+        </figure>
+    </body>
+    <body>
+    
+            <div class="wrapper">
+                <div class="form">
+                <header>
+                    <h1>Create Subtitle File</h1>
+                </header>
+                <lebel>Subtitles</lebel>
+                <div class="subtitle_box">
+                <lebel>
+                    <i class="fa-solid fa-plus"></i> 
+                    <i class="fa-solid fa-xmark"></i>
+               
+
+                </lebel>
+                <div class="input_field">
+                    <textarea class="caption"
+                    ></textarea>
+                    <input type="text" class="start" value="00:00:00">
+                    <input type="text" class="end" value="00:00:00">
+                </div>
+                <label class="bottom_label">
+                    <i class="fa-solid fa-plus"></i> 
+                </label>
+            </div>
+            <div class="file.options">
+                <label>File Name</label>
+                <input type="text">
+            </div>
+            <div class="save_source">
+                <label>Save As</label>
+
+            </div>
+            <div class="select_menu">
+                <select>
+                    <option value=".vtt">(.vtt)</option>
+                    <option value=".srt">(.srt)</option>
+                    <option value=".sbv">(.sbv)</option>
+                </select>
+
+            </div>
+
+            
+            
+
+            </div>
+
+            </div>
+                <div class="video_source">
+                <video>controls poster="./img.png</video>
+            </div>
+            <div class="buttoms">
+                <button class="btn insert_btn"> Insert Time</button>
+                <input type="file" class="btn" accept=".mp4.">
+
+
+            </div>
+
+            </div>
+
+            </div>
+        
+    </body>
+    <body>
+        <video>
+            <iframe serc="https://www.youtube.com/embed/LBqAyhwncBU" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+             allowfullscreen></iframe>"
+        </video>
+    </body>
+    
+    </head>
+</html>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LBqAyhwncBU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
